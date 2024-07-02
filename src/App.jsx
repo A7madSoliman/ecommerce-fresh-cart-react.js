@@ -1,5 +1,5 @@
 import "./App.css";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
@@ -26,7 +26,7 @@ import ResetCode from "./Pages/ResetCode/ResetCode";
 import ResetPassword from "./Pages/ResetPassword/ResetPassword";
 
 function App() {
-  const routers = createBrowserRouter([
+  const routers = createHashRouter([
     {
       path: "/",
       element: (
